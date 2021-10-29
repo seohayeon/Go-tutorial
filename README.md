@@ -26,6 +26,20 @@ fmt.Sprintf("Hi, %v. Welcome!", name)
 
 := (var을 생략한다.)
 
+에러 생성 
+errors.New("empty name")
+
+nil (에러가 없다.)
+
+로그 앞에 접두사(Ex: greetings:로그내용)
+log.SetPrefix("greetings: ")
+
+로그에 날짜/시간 없앤다.
+log.SetFlags(0)
+
+err출력후 프로그램 종료
+log.Fatal(err)
+
 ## Others
 모듈을 찾을 수 있는 곳 (npm과 비슷)
 https://pkg.go.dev
