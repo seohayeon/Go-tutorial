@@ -12,9 +12,24 @@ func Hello(name string) (string,error) {
 		return  "",errors.New("empty name")
 	}
 	message := fmt.Sprintf(randomFormat(),name)
+	//message := fmt.Sprint(randomFormat())
 	return message,nil
 }
 
+func Hellos(names []string)(map[string]string,error){
+	messages:= make(map[string]string)
+
+	for _, name:= range names {
+		message,err  := Hello(name)
+	if err != nil {
+            return nil, err
+        }
+        // In the map, associate the retrieved message with
+        // the name.
+        messages[name] = message
+    }
+    return messages, nil
+}
 // init sets initial values for variables used in the function.
 func init() {
     rand.Seed(time.Now().UnixNano())
