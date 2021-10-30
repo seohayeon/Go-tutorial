@@ -40,9 +40,28 @@ log.SetFlags(0)
 err출력후 프로그램 종료
 log.Fatal(err)
 
+배열 
+```
+[]string{"hello","hi","nice"}
+```
+배열에서 랜덤 인덱스 
+```
+rand.Intn(len(array))
+```
+
+## Modules
+랜덤 숫자 math/rand package
+
+콘솔 출력 fmt
+
+
 ## Others
 모듈을 찾을 수 있는 곳 (npm과 비슷)
 https://pkg.go.dev
+
+function이름이 대문자로 시작하면 export가능
+
+function이름이 소문자로 시작하면 export 불가능
 
 출처
 https://golang.org/doc/tutorial/
