@@ -13,6 +13,27 @@ example.com/greetings이라는 모듈을 import했는데 그 모듈이 상위폴
 ```
 go mod edit -replace example.com/greetings=../greetings
 ```
+설치파일로 빌드한다. window(.exe) linux(./)
+```
+go build
+```
+설치 경로를 확인한다.
+```
+go list -f '{{.Target}}'
+```
+설치 경로를 바꾼다
+```
+go env -w GOBIN=/path/to/your/bin
+```
+설치 경로에 설치한다.
+```
+go install
+```
+테스트 파일을 실행한다
+```
+go test
+```
+
 ## File
 콘솔출력
 ```
@@ -48,7 +69,19 @@ log.Fatal(err)
 ```
 rand.Intn(len(array))
 ```
+map: map[key]value
+```
+make(map[string]string)
 
+```
+반복문 
+```
+for _, name := range names {
+    //range의 names배열을 돌고 name은 그 배열의 요소  
+	//예를 들어 names가  {"Gladys", "Samantha", "Darrin"} 라면 
+	//반복문을 돌면서 배열에 있는 요소들을 뽑아온다.
+    }
+```
 ## Modules
 랜덤 숫자 math/rand package
 
@@ -62,6 +95,8 @@ https://pkg.go.dev
 function이름이 대문자로 시작하면 export가능
 
 function이름이 소문자로 시작하면 export 불가능
+
+projectname_test.go라는 이름으로 테스트 파일을 만들 수 있다.
 
 출처
 https://golang.org/doc/tutorial/
