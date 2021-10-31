@@ -104,9 +104,9 @@ function이름이 소문자로 시작하면 export 불가능
 
 projectname_test.go라는 이름으로 테스트 파일을 만들 수 있다.
 
-데이터베이스 관련 https://github.com/seohayeon/Go-tutorial/blob/main/data-access/DATABASE.md
+[데이터베이스 관련내용](https://github.com/seohayeon/Go-tutorial/blob/main/data-access/DATABASE.md)
 
-REST API관련 https://github.com/seohayeon/Go-tutorial/blob/main/web-service-gin/API.md
+[REST API관련내용](https://github.com/seohayeon/Go-tutorial/blob/main/web-service-gin/API.md)
 
 출처
 https://golang.org/doc/tutorial/
