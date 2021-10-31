@@ -83,9 +83,15 @@ for _, name := range names {
     }
 ```
 ## Modules
-랜덤 숫자 math/rand package
+* 랜덤 숫자 math/rand package
 
-콘솔 출력 fmt
+* 콘솔 출력 fmt
+
+* 서버 관련모듈
+
+"net/http"
+
+"github.com/gin-gonic/gin"
 
 
 ## Others
